@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="max-image-preview:large" />
+    <title>Products - Skynex</title>
+
+    <link rel="icon" href="/img/favicon-32x32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/img/fav.png" type="image/png" sizes="64x64" />
+
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/clone.css" />
+    <link rel="stylesheet" href="/css/custom-index.css" />
+    <link rel="stylesheet" href="/css/products.css" />
+    <link rel="stylesheet" href="/css/loader.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+
+  <body
+    class="blog wp-custom-logo wp-embed-responsive wp-theme-dripfix products-page"
+  >
+    <!-- Page Loader -->
+    <div id="page-loader" class="page-loader">
+      <img src="/img/Logo-beli-edited.png" alt="Skynex Global" class="loader-logo" />
+    </div>
+
+    <a class="skip-link screen-reader-text" id="wp-skip-link"
+      >Skip to content</a
+    >
+
+    <div class="wp-site-blocks">
+      <!-- Header will be loaded dynamically by clone.js -->
+      <div id="header-placeholder"></div>
+
+      <!-- Products Hero Section -->
+      <div class="products-hero">
+        <div class="products-hero-content">
+          <h2 class="products-title">PRODUCTS</h2>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <main class="products-main">
+        <!-- Lorem Text Section -->
+        <section class="products-description">
+          <div class="container">
+            <p class="products-text">
+              Easy Aerial is listed on the DIU's Blue Clear List and is an
+              ISO9001 and AS9100 certified company. All products are NDAA
+              compliant.
+            </p>
+          </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section class="certificates-section">
+          <div class="container"></div>
+        </section>
+
+        <!-- Products Cards Section -->
+        <section class="products-cards-section">
+          <div class="container">
+            <div class="products-cards-grid">
+              <div class="product-card">
+                <div class="product-card-image">
+                  <img src="/img/easyMobile.webp" alt="Product 1" />
+                </div>
+                <p class="product-card-subtitle">Easy Mobile</p>
+                <p class="product-card-description">
+                  Designed for mounted deployments on vehicles and vessels, the
+                  system can be installed on vehicles such as mobile command
+                  units, first responder vehicles and armored personnel
+                  carriers.
+                </p>
+                <div class="read-more-container">
+                  <button
+                    class="read-more-btn"
+                    onclick="handleReadMore('card1')"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-card-image">
+                  <img
+                    src="/img/easySite/main.png"
+                    alt="Product 2"
+                    id="easySiteMain"
+                  />
+                </div>
+                <p class="product-card-subtitle">Easy Site</p>
+                <p class="product-card-description">
+                  Easy Site Inspection systems are designed for ground
+                  operations that require a more robust payload capacity, as
+                  opposed to our Easy Mobile systems which provide rugged
+                  solutions with lighter payload capacity for on the move
+                  operations.
+                </p>
+                <div class="read-more-container">
+                  <button
+                    class="read-more-btn"
+                    onclick="handleReadMore('card2')"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-card-image">
+                  <img src="/img/contactIm.jpg" alt="Product 3" />
+                </div>
+                <p class="product-card-subtitle">Spare Parts – Coming Soon</p>
+                <p class="product-card-description">
+                  Contact us to discuss custom parts or early collaboration
+                  opportunities
+                </p>
+                <div class="read-more-container">
+                  <button
+                    class="read-more-btn"
+                    onclick="handleReadMore('card3')"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Easy Site Specifications Section (Initially Hidden) -->
+        <section class="easy-site-specifications" id="easySiteSpecifications">
+          <div class="easy-site-container">
+            <h2 class="easy-site-title">SPECIFIKACIJE</h2>
+
+            <img
+              src="/img/easySite/1.png"
+              alt="Easy Site Main"
+              class="easy-site-main-image"
+            />
+
+            <div class="easy-site-images-row">
+              <img src="/img/easySite/2.png" alt="Easy Site Image 1" />
+              <img src="/img/easySite/3.png" alt="Easy Site Image 2" />
+            </div>
+
+            <h3 class="easy-site-equipment-title">OPREMA KOJA PRATI SISTEM</h3>
+            <p class="easy-site-equipment-description">
+              KOMBINACIJA KAMERA MOŽE DA SE BIRA
+            </p>
+
+            <div class="easy-site-equipment-images">
+              <img src="/img/easySite/4.png" alt="Equipment 1" />
+              <img src="/img/easySite/5.png" alt="Equipment 2" />
+            </div>
+
+            <!-- Close Button -->
+            <div class="close-specs">
+              <button class="close-btn" onclick="closeEasySiteSpecifications()">
+                Zatvori
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Third Card Specifications Section (Initially Hidden) -->
+        <section class="third-card-specifications" id="thirdCardSpecifications">
+          <div class="third-card-container">
+            <img
+              src="/img/rezDelovi.png"
+              alt="Spare Parts"
+              class="third-card-main-image"
+              id="sparePartsImage"
+            />
+
+            <!-- Close Button -->
+            <div class="close-specs">
+              <button
+                class="close-btn"
+                onclick="closeThirdCardSpecifications()"
+              >
+                Zatvori
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Specifications Section (Initially Hidden) -->
+        <section class="specifications-section" id="specificationsSection">
+          <div class="specifications-container">
+            <h2 class="spec-title">SPECIFIKACIJE:</h2>
+
+            <p class="spec-description">
+              Designed for mounted deployments on vehicles and vessels, the
+              system can be installed on vehicles such as mobile command units,
+              first responder vehicles and armored personnel carriers.
+            </p>
+
+            <div class="spec-content">
+              <!-- Image Slider -->
+              <div class="spec-slider">
+                <div class="slider-container">
+                  <img
+                    src="/img/specs/1.png"
+                    alt="Slider 1"
+                    class="slider-image active"
+                  />
+                  <img
+                    src="/img/specs/2.png"
+                    alt="Slider 2"
+                    class="slider-image"
+                  />
+                  <img
+                    src="/img/specs/3.png"
+                    alt="Slider 3"
+                    class="slider-image"
+                  />
+                </div>
+                <div class="slider-dots">
+                  <span class="dot active" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+              </div>
+
+              <!-- Specifications Details -->
+              <div class="spec-details">
+                <div class="spec-item">
+                  <div class="spec-label">DIMENZIJE SISTEMA</div>
+                  <div class="spec-value">35.4" x 35.4" x 21.6"</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">TEŽINA SISTEMA</div>
+                  <div class="spec-value">65.9 kg (bez tereta)</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">RAČUNARSKA SNAGA</div>
+                  <div class="spec-value">Intel i7 Interni Web Server</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">VREME LETENJA</div>
+                  <div class="spec-value">Neprekidan vezani let</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">NAPAJANJE</div>
+                  <div class="spec-value">DC ulaz 1500 W</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">RAD U POKRETU</div>
+                  <div class="spec-value">
+                    40 km/h / do 25 čvorova za plovila
+                  </div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">NOSIVOST</div>
+                  <div class="spec-value">2 kg</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">MAKSIMALNA VISINA</div>
+                  <div class="spec-value">60 m ili 100 m</div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-label">OKRUŽENJE</div>
+                  <div class="spec-value">
+                    Sve vremenske prilike / Otpornost na vetar 40 km/h
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ideal For Section -->
+            <div class="ideal-section">
+              <h3 class="ideal-title">IDEALNO ZA:</h3>
+              <ul class="ideal-list">
+                <li>Nadzor velikih teritorija</li>
+                <li>Patroliranje</li>
+                <li>Incident response</li>
+              </ul>
+            </div>
+
+            <!-- System Components -->
+            <div class="components-section">
+              <h3 class="components-title">System Components:</h3>
+              <p class="components-description">
+                The system can be installed on such vehicles as mobile command
+                units, first responder vehicles and armored personnel carriers.
+              </p>
+            </div>
+
+            <!-- Images Row -->
+            <div class="images-row">
+              <div class="image-item">
+                <img src="/img/specs/1.png" alt="Component 1" />
+                <div class="image-title">Component 1</div>
+              </div>
+              <div class="image-item">
+                <img src="/img/specs/4.png" alt="Component 2" />
+                <div class="image-title">Component 2</div>
+              </div>
+              <div class="image-item">
+                <img src="/img/specs/5.png" alt="Component 3" />
+                <div class="image-title">Component 3</div>
+              </div>
+            </div>
+
+            <!-- Equipment Section -->
+            <div class="equipment-section">
+              <h3 class="equipment-title">OPREMA KOJA PRATI SISTEM:</h3>
+              <p class="equipment-description">
+                KOMBINACIJA SA KAMERAMA MOZE DA SE BIRA
+              </p>
+              <div class="equipment-images">
+                <img src="/img/gear/1.png" alt="Equipment 1" />
+                <img src="/img/gear/2.png" alt="Equipment 2" />
+              </div>
+            </div>
+
+            <!-- Close Button -->
+            <div class="close-specs">
+              <button class="close-btn" onclick="closeSpecifications()">
+                Zatvori
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="products-contact-section" id="productsContact">
+          <div class="products-contact-container">
+            <div class="products-contact-header">
+              <h2 class="products-contact-title" id="productsContactTitle">
+                GET IN TOUCH
+              </h2>
+              <p class="products-contact-subtitle" id="productsContactSubtitle">
+                Interested in our UAV systems? Contact us for inquiries, quotes,
+                or partnership opportunities.
+              </p>
+            </div>
+
+            <form
+              class="products-contact-form"
+              id="productsContactForm"
+              method="post"
+            >
+              <input
+                type="hidden"
+                name="formid"
+                value="products_contact_form"
+              />
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="pFirstName" id="labelFirstName">First Name</label>
+                  <input
+                    type="text"
+                    id="pFirstName"
+                    name="first_name"
+                    placeholder="Enter your first name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="pLastName" id="labelLastName">Last Name</label>
+                  <input
+                    type="text"
+                    id="pLastName"
+                    name="last_name"
+                    placeholder="Enter your last name"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="pPhone" id="labelPhone">Phone</label>
+                  <input
+                    type="text"
+                    id="pPhone"
+                    name="subject"
+                    placeholder="Enter your phone"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="pEmail" id="labelEmail">Email</label>
+                  <input
+                    type="email"
+                    id="pEmail"
+                    name="f_0"
+                    placeholder="example@gmail.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="pCompany" id="labelCompany">Company Name</label>
+                  <input
+                    type="text"
+                    id="pCompany"
+                    name="f_1"
+                    placeholder="Enter your company name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="pCountry" id="labelCountry">Country*</label>
+                  <select id="pCountry" name="f_3" required>
+                    <option value="">Loading countries...</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="pMessage" id="labelMessage">Message</label>
+                <textarea
+                  id="pMessage"
+                  name="message"
+                  rows="5"
+                  placeholder="Type your message here..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-submit">
+                <button
+                  type="submit"
+                  class="products-submit-btn"
+                  id="productsSubmitBtn"
+                >
+                  <span id="submitBtnText">SEND MESSAGE</span>
+                </button>
+              </div>
+
+              <div
+                class="form-notification"
+                id="productsFormNotification"
+              ></div>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer will be loaded dynamically by clone.js -->
+      <div id="footer-placeholder"></div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/loader.js"></script>
+    <script src="/js/clone.js"></script>
+    <script src="/js/products.js"></script>
+  </body>
+</html>

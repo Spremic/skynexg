@@ -1,0 +1,1193 @@
+/* Products Page Styles */
+
+/* Apply black theme to entire products page */
+.products-page {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.products-page * {
+  color: #fff !important;
+}
+
+/* Products Hero Section */
+.products-hero {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.products-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  background-image: url("/img/contactIm.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.5);
+}
+
+.products-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.products-hero-content .products-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #000 !important;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+/* Main content area */
+.products-main {
+  background-color: #000;
+  padding: 0;
+}
+
+/* Products description section */
+.products-description {
+  margin-top: 40px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.products-description .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.products-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #fff !important;
+  margin: 0;
+}
+
+/* Certificates section */
+.certificates-section {
+  padding: 60px 20px;
+  background-color: #000;
+  border-bottom: 3px solid #fff;
+}
+
+.certificates-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.certificates-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.certificate-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificate-circle {
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.certificate-circle img {
+  width: 70px;
+  height: 70px;
+}
+
+/* Products Cards Section */
+.products-cards-section {
+  padding: 40px 20px 80px 20px;
+  background-color: #000;
+}
+
+.products-cards-section .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.products-cards-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  width: 100%;
+  max-width: 800px;
+  min-width: unset;
+  background-color: #000;
+  padding: 0 0 50px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.product-card-title {
+  font-size: 1.8rem;
+  color: #fff !important;
+  font-weight: 900;
+  margin-bottom: 30px;
+  line-height: 1.3;
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.product-card-image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-bottom: 4px solid #fcb900;
+}
+
+.product-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-card-subtitle {
+  font-size: 1.2rem;
+  color: #fcb900 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.product-card-description {
+  font-size: 1.1rem;
+  color: #ccc !important;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  min-height: auto;
+  display: block;
+  text-align: center;
+  padding: 0 40px;
+}
+
+/* Single Read More Button */
+.read-more-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.read-more-btn {
+  width: 250px;
+  height: 40px;
+  background-color: #fcb900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 15px;
+  position: relative;
+}
+
+.read-more-btn:hover {
+  background-color: #e6a600;
+}
+
+.read-more-btn::after {
+  content: "▼";
+  font-size: 0.9rem;
+  color: #000 !important;
+  margin-left: 10px;
+}
+
+/* Remove FAQ Container - not needed anymore */
+.faq-container {
+  display: none;
+}
+
+/* Override any white text colors in the black theme */
+.products-page .wp-block-heading,
+.products-page p,
+.products-page h1,
+.products-page h2,
+.products-page h3,
+.products-page h4,
+.products-page h5,
+.products-page h6,
+.products-page span,
+.products-page div,
+.products-page a {
+  color: #fff !important;
+}
+
+/* FAQ text should remain black */
+.product-card .faq-text,
+.product-card .faq-arrow {
+  color: #000 !important;
+  font-size: 1.2rem;
+}
+
+/* Keep the header and footer styling as intended */
+.products-page header,
+.products-page footer {
+  background-color: #000 !important;
+}
+
+/* Specifications Section */
+.specifications-section {
+  display: none;
+  background-color: #000;
+  padding: 80px 20px;
+  animation: fadeInUp 0.6s ease-out;
+  margin-top: 0;
+}
+
+.specifications-section.active {
+  display: block;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.specifications-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.spec-title {
+  font-size: 2.2rem;
+  color: #fcb900 !important;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.spec-description {
+  font-size: 1.1rem;
+  color: #ccc !important;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 50px;
+  padding: 0 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.spec-content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+/* Image Slider */
+.spec-slider {
+  flex: 1;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slider-image.active {
+  opacity: 1;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #fcb900;
+}
+
+/* Specifications List */
+.spec-details {
+  flex: 1;
+}
+
+.spec-item {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.spec-label {
+  flex: 1;
+  color: #fff !important;
+  font-weight: 600;
+  border-left: 4px solid #fcb900;
+  border-left-style: solid;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 15px;
+  font-size: 1.1rem;
+}
+
+.spec-value {
+  flex: 1;
+  color: #ccc !important;
+  padding-left: 25px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Ideal For Section */
+.ideal-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ideal-title {
+  font-size: 1.8rem;
+  color: #fcb900 !important;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ideal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+.ideal-list li {
+  color: #ccc !important;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.ideal-list li::before {
+  content: "•";
+  color: #fcb900;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* System Components */
+.components-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.components-title {
+  font-size: 1.8rem;
+  color: #fcb900 !important;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.components-description {
+  font-size: 1.1rem;
+  color: #ccc !important;
+  line-height: 1.6;
+  padding: 0 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Images Row */
+.images-row {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 70px;
+  flex-wrap: wrap;
+}
+
+.image-item {
+  text-align: center;
+  flex: 1;
+  max-width: 380px;
+}
+
+.image-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+/* Equipment Section */
+.equipment-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.equipment-title {
+  font-size: 1.8rem;
+  color: #fcb900 !important;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.specifications-container h2,
+.specifications-container h3,
+.specifications-container h4 {
+  color: #fcb900 !important;
+}
+.equipment-description {
+  font-size: 1.3rem;
+  color: #ccc !important;
+  margin-bottom: 40px;
+}
+
+.equipment-images {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.equipment-images img {
+  width: 400px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Close Button */
+.close-specs {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.close-btn {
+  background-color: #fcb900;
+  color: #000 !important;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.close-btn:hover {
+  background-color: #e6a600;
+}
+
+/* Easy Site Specifications Section */
+.easy-site-specifications {
+  display: none;
+  background-color: #000;
+  padding: 80px 20px;
+  animation: fadeInUp 0.6s ease-out;
+  margin-top: 0;
+}
+
+.easy-site-specifications.active {
+  display: block;
+}
+
+.easy-site-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.easy-site-container h2,
+.easy-site-container h3,
+.easy-site-container h4 {
+  color: #fcb900 !important;
+}
+
+.easy-site-title {
+  font-size: 2.2rem;
+  color: #fcb900 !important;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.easy-site-main-image {
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+  object-fit: contain; /* changed from cover to contain */
+  border-radius: 12px;
+  margin: 0 auto 60px auto;
+  display: block;
+}
+#easySiteMain {
+  object-position: top center; /* Ensure the image is centered at the top */
+}
+
+.easy-site-images-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+
+.easy-site-images-row img {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex: 1;
+}
+
+.easy-site-equipment-title {
+  font-size: 1.8rem;
+  color: #fcb900 !important;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.easy-site-equipment-description {
+  font-size: 1.3rem;
+  color: #ccc !important;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.easy-site-equipment-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.easy-site-equipment-images img {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Mobile responsive for Easy Site */
+@media (max-width: 768px) {
+  .easy-site-main-image {
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+  }
+
+  .easy-site-images-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .easy-site-images-row img {
+    height: 300px;
+  }
+
+  .easy-site-equipment-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .easy-site-equipment-images img {
+    width: 100%;
+    max-width: 350px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .easy-site-title {
+    font-size: 1.5rem;
+  }
+
+  .easy-site-equipment-title {
+    font-size: 1.3rem;
+  }
+
+  .easy-site-equipment-description {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 1200px) {
+  .product-card-description {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-title {
+    font-size: 2.5rem;
+  }
+
+  .products-hero {
+    height: 400px;
+  }
+
+  .products-description {
+    padding: 30px 15px;
+  }
+
+  .products-text {
+    font-size: 1.1rem;
+  }
+
+  .certificates-section {
+    padding: 40px 15px;
+  }
+
+  .certificates-grid {
+    gap: 20px;
+  }
+
+  .certificate-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .certificate-circle img {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Products Cards Responsive */
+  .products-cards-section {
+    padding: 30px 15px 60px 15px;
+  }
+
+  .products-cards-grid {
+    gap: 40px;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    min-width: unset;
+  }
+
+  .product-card-title {
+    font-size: 1.6rem;
+    min-height: auto;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  .product-card-image {
+    height: 300px;
+    margin-bottom: 25px;
+  }
+
+  .product-card-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
+  .product-card-description {
+    font-size: 1rem;
+    min-height: auto;
+    padding: 0 20px;
+    margin-bottom: 25px;
+  }
+
+  .read-more-btn {
+    width: 200px;
+    height: 35px;
+    font-size: 0.9rem;
+    padding: 0 12px;
+  }
+
+  .read-more-btn::after {
+    font-size: 0.8rem;
+    margin-left: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .products-hero {
+    height: 300px;
+  }
+
+  .products-description {
+    margin-top: 30px;
+    padding: 25px 10px;
+  }
+
+  .products-text {
+    font-size: 1rem;
+  }
+
+  .certificates-section {
+    padding: 30px 10px;
+  }
+
+  .certificates-grid {
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .certificate-circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .certificate-circle img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Products Cards Mobile */
+  .products-cards-section {
+    padding: 25px 10px 50px 10px;
+  }
+
+  .product-card {
+    max-width: 100%;
+    padding: 0 0 40px 0;
+  }
+
+  .product-card-title {
+    font-size: 1.4rem;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+  }
+
+  .product-card-image {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  .product-card-subtitle {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
+  .product-card-description {
+    font-size: 0.95rem;
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+
+  .read-more-btn {
+    width: 180px;
+    height: 32px;
+    font-size: 0.85rem;
+    padding: 0 10px;
+  }
+
+  .read-more-btn::after {
+    font-size: 0.75rem;
+    margin-left: 6px;
+  }
+}
+
+/* Mobile Responsive for Specifications Section Only */
+@media (max-width: 768px) {
+  .spec-content {
+    width: 95%;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .spec-title {
+    font-size: 1.8rem;
+  }
+
+  .spec-description,
+  .components-description {
+    padding: 0 30px;
+    font-size: 1.1rem;
+  }
+
+  .slider-container {
+    height: 350px;
+  }
+
+  .ideal-title,
+  .components-title,
+  .equipment-title {
+    font-size: 1.5rem;
+  }
+
+  .ideal-list li {
+    font-size: 1rem;
+  }
+
+  .images-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .image-item {
+    max-width: 100%;
+  }
+
+  .image-item img {
+    height: 250px;
+    border-radius: 20px;
+  }
+
+  .equipment-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .equipment-images img {
+    width: 280px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .spec-title {
+    font-size: 1.5rem;
+  }
+
+  .spec-content {
+    width: 98%;
+  }
+
+  .spec-description,
+  .components-description {
+    padding: 0 20px;
+    font-size: 1rem;
+  }
+
+  .slider-container {
+    height: 280px;
+  }
+
+  .ideal-title,
+  .components-title,
+  .equipment-title {
+    font-size: 1.3rem;
+  }
+
+  .spec-item {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .spec-value {
+    padding-left: 19px;
+  }
+
+  .equipment-images img {
+    width: 250px;
+    height: 220px;
+  }
+}
+
+/* Third Card Specifications Section */
+.third-card-specifications {
+  display: none;
+  background-color: #000;
+  padding: 80px 20px;
+  animation: fadeInUp 0.6s ease-out;
+  margin-top: 0;
+}
+
+.third-card-specifications.active {
+  display: block;
+}
+
+.third-card-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.third-card-container h2,
+.third-card-container h3,
+.third-card-container h4 {
+  color: #fcb900 !important;
+}
+
+.third-card-title {
+  font-size: 2.2rem;
+  color: #fcb900 !important;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.third-card-main-image {
+  width: 600px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0 auto 60px auto;
+  display: block;
+}
+
+.third-card-description {
+  font-size: 1.2rem;
+  color: #ccc !important;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 50px;
+  padding: 0 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mobile responsive for Third Card */
+@media (max-width: 768px) {
+  .third-card-main-image {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+  }
+
+  .third-card-description {
+    padding: 0 30px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .third-card-title {
+    font-size: 1.5rem;
+  }
+
+  .third-card-main-image {
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+  }
+
+  .third-card-description {
+    padding: 0 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Additional font size fixes for screens below 500px */
+@media (max-width: 500px) {
+  /* Exclude hero section */
+  .products-title:not(.products-hero .products-title) {
+    font-size: 1.85rem !important;
+  }
+  
+  .products-text {
+    font-size: 1rem !important;
+  }
+  
+  .product-card-title {
+    font-size: 1.35rem !important;
+  }
+  
+  .product-card-subtitle {
+    font-size: 1rem !important;
+  }
+  
+  .product-card-description {
+    font-size: 0.95rem !important;
+  }
+  
+  .easy-site-title {
+    font-size: 1.45rem !important;
+  }
+  
+  .easy-site-equipment-title {
+    font-size: 1.25rem !important;
+  }
+  
+  .easy-site-equipment-description {
+    font-size: 1.05rem !important;
+  }
+  
+  .spec-title {
+    font-size: 1.45rem !important;
+  }
+  
+  .spec-description,
+  .components-description {
+    font-size: 1rem !important;
+  }
+  
+  .ideal-title,
+  .components-title,
+  .equipment-title {
+    font-size: 1.25rem !important;
+  }
+  
+  .ideal-list li {
+    font-size: 1rem !important;
+  }
+  
+  .third-card-title {
+    font-size: 1.45rem !important;
+  }
+  
+  .third-card-description {
+    font-size: 1rem !important;
+  }
+  
+  .products-contact-title {
+    font-size: 1.55rem !important;
+  }
+  
+  .products-contact-subtitle {
+    font-size: 1rem !important;
+  }
+  
+  .read-more-btn {
+    font-size: 0.8rem !important;
+    padding: 0 8px !important;
+    width: 145px !important;
+    height: 28px !important;
+  }
+  
+  .read-more-btn::after {
+    font-size: 0.7rem !important;
+    margin-left: 5px !important;
+  }
+}
+
+.third-card-main-image {
+  width: 100%;
+  max-width: 350px;
+  height: 250px;
+}
+
+.third-card-description {
+  padding: 0 20px;
+  font-size: 1rem;
+}
+
+/* Footer newsletter form - 100% width on mobile */
+@media (max-width: 767px) {
+  footer .wp-block-gutena-forms form,
+  footer .wp-block-gutena-forms,
+  footer .wp-block-gutena-field-group,
+  footer .gutena-forms-email-field,
+  footer .gutena-forms-email-field input {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  footer .wp-block-gutena-forms {
+    padding-right: 0 !important;
+  }
+
+  footer .wp-block-column h2 {
+    text-align: center !important;
+    padding-right: 0 !important;
+  }
+}
+
+#sparePartsImage {
+  width: 100% !important;
+  max-width: 500px !important;
+  height: 500px !important;
+  display: block;
+  margin: 0 auto 60px auto !important;
+  border-radius: 20px !important;
+  object-fit: contain !important;
+}

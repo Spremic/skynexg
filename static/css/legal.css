@@ -1,0 +1,230 @@
+/* Legal page specific styles */
+
+header a {
+    text-decoration: none;
+}
+.legal-hero-section {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  padding: 120px 0 80px 0;
+  position: relative;
+}
+
+
+.legal-hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.3);
+  z-index: -1;
+}
+
+.legal-hero-title {
+  font-size: clamp(2.5rem, 4vw, 4rem) !important;
+  color: #fcb900 !important;
+  font-weight: 700 !important;
+  margin-bottom: 1.5rem !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.legal-hero-subtitle {
+  font-size: 1.2rem !important;
+  color: #f0f0f0 !important;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.legal-content-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.legal-section {
+  background: white;
+  border-radius: 8px;
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #fcb900;
+}
+
+.legal-section-title {
+  color: #000 !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 2rem !important;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #fcb900;
+  text-transform: uppercase;
+}
+
+.legal-subsection {
+  margin-bottom: 2rem;
+}
+
+.legal-subsection h3 {
+  color: #333 !important;
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 1rem !important;
+  padding-left: 15px;
+  border-left: 3px solid #fcb900;
+}
+
+.legal-subsection p {
+  color: #555 !important;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.legal-contact-info {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #e9ecef;
+  margin-top: 1rem;
+}
+
+.legal-contact-info p {
+  margin-bottom: 0.5rem !important;
+  font-size: 0.95rem !important;
+}
+
+.legal-contact-info strong {
+  color: #fcb900 !important;
+  font-weight: 600;
+}
+
+.legal-updated {
+  text-align: center;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.legal-updated p {
+  color: #666 !important;
+  font-size: 0.9rem !important;
+  margin: 0 !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .legal-hero-section {
+    padding: 80px 0 60px 0;
+  }
+  
+  .legal-content-section {
+    padding: 60px 0;
+  }
+  
+  .legal-section {
+    padding: 25px 20px;
+    margin-bottom: 30px;
+  }
+  
+  .legal-section-title {
+    font-size: 1.5rem !important;
+  }
+  
+  .legal-subsection h3 {
+    font-size: 1.1rem !important;
+  }
+  
+  .legal-subsection p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Reduce side padding on very small screens */
+  .wp-site-blocks .has-global-padding,
+  .legal-content-section {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .legal-section {
+    padding: 20px 8px;
+    margin-bottom: 24px;
+  }
+  
+  /* Hero section - keep original size */
+  .legal-hero-title {
+    font-size: 2rem !important;
+  }
+  
+  /* Increase font sizes for non-hero sections */
+  .legal-section-title {
+    font-size: 1.35rem !important;
+  }
+  
+  .legal-subsection h3 {
+    font-size: 1.05rem !important;
+  }
+  
+  .legal-text,
+  .legal-subsection p {
+    font-size: 0.95rem !important;
+  }
+}
+
+/* Footer newsletter form - 100% width on mobile */
+@media (max-width: 767px) {
+  footer .wp-block-gutena-forms form,
+  footer .wp-block-gutena-forms,
+  footer .wp-block-gutena-field-group,
+  footer .gutena-forms-email-field,
+  footer .gutena-forms-email-field input {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  footer .wp-block-gutena-forms {
+    padding-right: 0 !important;
+  }
+  
+  footer .wp-block-column h2 {
+    text-align: center !important;
+    padding-right: 0 !important;
+  }
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Print styles */
+@media print {
+  .legal-hero-section::before {
+    display: none;
+  }
+  
+  .legal-section {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    page-break-inside: avoid;
+  }
+  
+  .legal-section-title {
+    color: #000 !important;
+  }
+}

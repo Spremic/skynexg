@@ -1,0 +1,1439 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif !important;
+}
+#wlcmBcg {
+  position: relative !important;
+  height: 700px !important;
+  padding-top: 150px;
+}
+#wlcmBcg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/img/wlcmBcg.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.25) !important;
+  z-index: -1;
+}
+
+#wlcmBcg h2 {
+  color: #fff !important;
+}
+#wlcmBcg .has-regular-font-size {
+  color: #f0f0f0 !important;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+#wlcmBcg .hero-subtitle {
+  color: rgba(255, 255, 255, 0.95) !important;
+  letter-spacing: 0.4px;
+  line-height: 1.85;
+  font-weight: 400;
+  margin-top: 20px !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  max-width: 700px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#wlcmBcg .secondParagraph {
+  color: #f0f0f0;
+  line-height: 1.8;
+}
+#wlcmBcg .hero-additional-text {
+  color: #f0f0f0;
+  line-height: 1.8;
+}
+#partnerWhy {
+  height: auto !important;
+  position: relative !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  background-image: none !important;
+  overflow: hidden;
+}
+
+#partnerWhy::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/blackBcg.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  transform: scaleX(-1);
+  z-index: -1;
+  display: block !important;
+}
+#partnerWhy p {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Remove all spacing from Network section containers */
+#partnerWhy .partners-network-container,
+#partnerWhy .partners-network-section,
+#partnerWhy .wp-block-group {
+  margin-bottom: 0 !important;
+}
+
+/* Override inline styles on Network container - deep fix */
+#partnerWhy .partners-network-container[style*="padding-bottom"] {
+  padding-bottom: 150px !important;
+}
+
+/* Mobile: Remove top and bottom padding on Network container */
+@media (max-width: 768px) {
+  #partnerWhy .partners-network-container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  /* Override inline style padding-bottom on mobile */
+  #partnerWhy .partners-network-container[style*="padding-bottom"] {
+    padding-bottom: 0 !important;
+  }
+  
+  /* Override inline style padding-top on mobile */
+  #partnerWhy .partners-network-container[style*="padding-top"] {
+    padding-top: 0 !important;
+  }
+}
+
+/* Remove spacing from spacer element inside Network section */
+#partnerWhy .wp-block-spacer {
+  display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#aboutUsContainer ul {
+  padding: 0 !important;
+}
+#aboutUsContainer li {
+  display: flex !important;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#aboutUsContainer li svg {
+  width: 18px;
+  height: 18px;
+}
+#contactForm {
+  position: relative !important;
+  background-color: #ffffff !important;
+}
+
+#contactForm.wp-block-cover {
+  background-color: #ffffff !important;
+}
+
+#contactForm .wp-block-cover__background {
+  display: none !important;
+}
+
+/* Remove bottom spacing from body and html */
+html, body {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Remove bottom spacing from wp-site-blocks */
+.wp-site-blocks {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Remove ALL block gaps from main container - force sections to touch */
+main.wp-block-group.is-layout-flow {
+  --wp--style--block-gap: 0 !important;
+}
+
+main.wp-block-group.is-layout-flow > * {
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Force wp-site-blocks container to have no line-height spacing */
+.wp-site-blocks {
+  line-height: 0 !important;
+  font-size: 0 !important;
+}
+
+.wp-site-blocks > * {
+  line-height: normal !important;
+  font-size: initial !important;
+}
+
+/* Ensure Ekosistem and Contact have absolutely zero spacing */
+#ekosistem-section {
+  margin: 0 !important;
+  padding-bottom: 0 !important;
+  display: block !important;
+}
+
+#ekosistem-section .wp-block-cover__inner-container {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#contactForm {
+  margin: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Force sections to touch - nuclear option */
+section#ekosistem-section,
+footer#contactForm {
+  display: block !important;
+  margin: 0 !important;
+  border: none !important;
+  outline: none !important;
+  line-height: 0 !important;
+}
+
+section#ekosistem-section {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  border-bottom: none !important;
+}
+
+footer#contactForm {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  border-top: none !important;
+  background-color: #ffffff !important;
+}
+
+/* Remove any space between section close and footer start */
+main + footer#contactForm {
+  margin-top: 0 !important; /* Zero margin to ensure no gap */
+  margin-block-start: 0 !important;
+}
+
+/* Ensure main container has no spacing issues */
+main {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  display: block !important;
+  border: none !important;
+  line-height: 0 !important;
+}
+
+/* Remove spacing from last child of main */
+main > *:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Specifically target Network section as last child */
+main > #partnerWhy,
+main > #partnerWhy > *,
+main > #partnerWhy .partners-network-container {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Override WP site blocks default spacing for the footer */
+.wp-site-blocks > footer#contactForm {
+  margin-block-start: 0 !important;
+  margin-top: 0 !important; /* Zero margin to kill the gap */
+}
+
+/* Nuclear option - override WordPress core spacing */
+:where(.wp-site-blocks) > main {
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+}
+
+:where(.wp-site-blocks) > footer {
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+}
+
+#contactForm::before {
+  display: none;
+}
+
+/* Force Ekosistem section to have fixed background for seamless transition */
+#ekosistem-section .wp-block-cover__background {
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+/* Naslov h2 - bold, treba da override-uje .has-text-align-center */
+#contactForm h2.has-text-align-center,
+#contactForm h2.wp-block-heading.has-text-align-center {
+  color: var(--color-dark) !important;
+  font-size: clamp(36px, 5vw, 64px) !important;
+  font-weight: 900 !important;
+}
+
+@media (max-width: 500px) {
+  /* Contact form title - slightly larger */
+  #contactForm h2.has-text-align-center,
+  #contactForm h2.wp-block-heading.has-text-align-center {
+    font-size: 30px !important;
+  }
+  
+  .purpose-label-en {
+    font-size: 19px !important;
+  }
+  
+  .purpose-main-text {
+    font-size: 15px !important;
+  }
+  
+  .purpose-secondary-text {
+    font-size: 16px !important;
+  }
+  
+  /* Contact form input and label adjustments for mobile */
+  #contactForm .form-label,
+  #contactForm .heading-input-label-gutena,
+  #contactForm label.heading-input-label-gutena,
+  #contactForm .wp-block-heading.heading-input-label-gutena,
+  #contactForm label {
+    font-size: 0.7rem !important;
+  }
+  
+  /* All input types - comprehensive override */
+  #contactForm .form-input,
+  #contactForm input,
+  #contactForm input[type="text"],
+  #contactForm input[type="email"],
+  #contactForm input[type="tel"],
+  #contactForm .form-select,
+  #contactForm select,
+  #contactForm .gutena-forms-field,
+  #contactForm .gutena-forms-text-field input,
+  #contactForm .gutena-forms-email-field input,
+  #contactForm .gutena-forms-select-field select,
+  #contactForm .field-group-type-email input,
+  #contactForm .field-group-type-email .gutena-forms-field,
+  #contactForm .gutena-forms-email-field .gutena-forms-field {
+    font-size: 0.8rem !important;
+    height: 44px !important;
+    line-height: 44px !important;
+    padding: 0 12px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  #contactForm select,
+  #contactForm .form-select {
+    padding-right: 35px !important;
+    background-size: 13px !important;
+    background-position: right 10px center !important;
+  }
+  
+  #contactForm .form-textarea,
+  #contactForm textarea,
+  #contactForm .gutena-forms-textarea-field textarea {
+    font-size: 0.8rem !important;
+    padding: 10px 12px !important;
+    min-height: 100px !important;
+    height: auto !important;
+    line-height: 1.5 !important;
+  }
+  
+  /* Submit button adjustments */
+  #contactForm .gutena-forms-submit-button .wp-block-button__link,
+  #contactForm .contact-submit-btn,
+  #contactForm button[type="submit"],
+  #contactForm .wp-block-button__link {
+    font-size: 0.75rem !important;
+    padding: 10px 20px !important;
+    height: 38px !important;
+    min-height: 38px !important;
+  }
+}
+
+#contactForm .gutena-forms-text-field,
+#contactForm .gutena-forms-email-field,
+#contactForm .gutena-forms-select-field,
+#contactForm .gutena-forms-textarea-field {
+  width: 100% !important;
+}
+
+/* Ensure email field container has same styling as text field container */
+#contactForm .gutena-forms-email-field {
+  width: 100% !important;
+}
+
+/* Email field input styling is handled by the main input selector below */
+
+/* Fix column equality in contact form */
+#contactForm .wp-block-columns .wp-block-column {
+  flex-basis: 50% !important;
+  width: 50% !important;
+}
+
+/* Ensure all form inputs have consistent width */
+#contactForm input,
+#contactForm select,
+#contactForm textarea {
+  width: 100% !important;
+  background-color: #ffffff;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px !important;
+  padding-left: 10px;
+  color: #1a1a1a !important;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+/* Fix select field heights to match other inputs */
+#contactForm select {
+  height: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
+  /* Custom dropdown arrow */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+/* Style the dropdown options */
+#contactForm select option {
+  background-color: #ffffff;
+  color: #1a1a1a !important;
+  padding: 10px;
+  border: none;
+  font-weight: normal;
+}
+
+/* Hover effect for options */
+#contactForm select option:hover {
+  background-color: #f5f5f5;
+  color: #fcb900;
+}
+
+/* Selected option styling */
+#contactForm select option:checked {
+  background-color: #fcb900;
+  color: #000;
+  font-weight: bold;
+}
+
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+  font-weight: 400;
+  color: #666666 !important;
+  opacity: 1;
+}
+
+#contactForm input {
+  height: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 10px;
+}
+
+/* Ensure email input has exactly the same styling as text inputs */
+#contactForm input[type="email"],
+#contactForm input[type="email"].gutena-forms-field,
+#contactForm .gutena-forms-email-field input,
+#contactForm .gutena-forms-email-field .gutena-forms-field,
+#contactForm .email-field,
+#contactForm .field-group-type-email .gutena-forms-field,
+#contactForm .field-group-type-email input {
+  height: 50px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  background-color: #ffffff !important;
+  border: 1px solid #d0d0d0 !important;
+  color: #1a1a1a !important;
+  font-size: 0.9rem !important;
+  box-sizing: border-box !important;
+  font-weight: 400 !important;
+  border-radius: 4px !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+}
+
+#contactForm input:focus,
+#contactForm input[type="email"]:focus,
+#contactForm .gutena-forms-email-field input:focus,
+#contactForm select:focus,
+#contactForm textarea:focus {
+  outline: none;
+  border-color: #fcb900 !important;
+  box-shadow: 0 0 0 3px rgba(252, 185, 0, 0.1);
+}
+
+/* Ensure field groups take full width */
+#contactForm .wp-block-gutena-field-group {
+  width: 100% !important;
+}
+#contactForm textarea {
+  height: 150px;
+  padding-top: 10px;
+}
+#contactForm h3 {
+  font-size: 0.95rem !important;
+  margin-bottom: 0px !important;
+  color: #1a1a1a !important;
+  font-weight: 600 !important;
+}
+
+#contactForm .wp-block-heading {
+  margin-bottom: 10px !important;
+  color: #1a1a1a !important;
+}
+
+/* Form labels - make them dark and visible */
+#contactForm .heading-input-label-gutena {
+  color: #1a1a1a !important;
+  font-weight: 600 !important;
+}
+
+#firstRow {
+  margin-bottom: -25px !important;
+}
+
+/* Ensure all form rows have consistent spacing */
+#contactForm .wp-block-columns {
+  margin-bottom: 30px !important;
+  margin-top: 0 !important;
+}
+
+/* Remove custom-margin top margin since we're using consistent margin-bottom */
+#contactForm .custom-margin {
+  margin-top: 0 !important;
+}
+
+#formSubmit {
+  color: #000 !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+}
+
+/* Submit button styling */
+.gutena-forms-submit-button .wp-block-button__link {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 16px 40px !important;
+  background: #FDB913 !important;
+  color: #0a0a0a !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  border-radius: 6px !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  letter-spacing: 0.5px !important;
+  cursor: pointer !important;
+  border: none !important;
+  width: 180px !important;
+  height: 47px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+}
+
+.gutena-forms-submit-button .wp-block-button__link:hover {
+  background: #ffc94d !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 30px rgba(253, 185, 19, 0.3) !important;
+}
+footer .gutena-forms-email-field {
+  width: 100% !important;
+}
+/* Newsletter form styling to match contact form */
+footer .gutena-forms-email-field input {
+  width: 100% !important;
+  background-color: transparent !important;
+  border: 1px solid #fff !important;
+  padding-left: 10px !important;
+  color: #f0f0f0 !important;
+  font-size: 0.9rem !important;
+  box-sizing: border-box !important;
+  height: 50px !important;
+}
+
+footer .gutena-forms-email-field input::placeholder {
+  font-weight: bold !important;
+  color: #f0f0f081 !important;
+  opacity: 1 !important;
+}
+
+/* This is for footer newsletter form - keep light colors for dark background */
+.skynex-footer .wp-block-heading.heading-input-label-gutena {
+  font-size: 0.95rem !important;
+  margin-bottom: 0px !important;
+  color: #f0f0f0 !important;
+}
+
+/* Contact form labels - dark on white background */
+#contactForm .heading-input-label-gutena,
+#contactForm .wp-block-heading.heading-input-label-gutena,
+#contactForm label.heading-input-label-gutena {
+  color: #1a1a1a !important;
+  font-weight: 600 !important;
+  display: block !important;
+  cursor: pointer !important;
+}
+
+/* Simplified form labels - clean and close to inputs */
+#contactForm .form-label {
+  color: #1a1a1a !important;
+  font-weight: 600 !important;
+  font-size: 1rem !important;
+  display: block !important;
+  cursor: pointer !important;
+  margin: 0 0 0 0 !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+  line-height: 1.2 !important;
+  padding: 0 !important;
+  height: auto !important;
+}
+
+/* Remove all gaps and spacing from form field containers, but allow label margin */
+#contactForm .wp-block-group.is-vertical.is-layout-flex,
+#contactForm .wp-block-group.is-vertical {
+  gap: 0 !important;
+  row-gap: 0 !important;
+  column-gap: 0 !important;
+  --wp--style--block-gap: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  align-items: flex-start !important;
+}
+
+/* Ensure 7px spacing between label and input wrapper */
+#contactForm .form-label + .form-field-wrapper {
+  margin-top: 7px !important;
+  padding-top: 0 !important;
+}
+
+/* Remove any block gap in form containers */
+#contactForm .gutena-forms-contact-form {
+  --wp--style--block-gap: 0 !important;
+  gap: 0 !important;
+}
+
+#contactForm .wp-block-gutena-field-group {
+  --wp--style--block-gap: 0 !important;
+  gap: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Simplified form field wrappers */
+#contactForm .form-field-wrapper {
+  width: 100% !important;
+  margin: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Simplified form inputs - clean styling */
+#contactForm .form-input,
+#contactForm .form-select,
+#contactForm .form-textarea {
+  width: 100% !important;
+  background-color: #ffffff !important;
+  border: 1px solid #d0d0d0 !important;
+  border-radius: 4px !important;
+  padding: 0 10px !important;
+  color: #1a1a1a !important;
+  font-size: 0.9rem !important;
+  box-sizing: border-box !important;
+  font-weight: 400 !important;
+  height: 50px !important;
+  line-height: 50px !important;
+  margin: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  display: block !important;
+}
+
+/* Select specific styling */
+#contactForm .form-select {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background-repeat: no-repeat !important;
+  background-position: right 12px center !important;
+  background-size: 16px !important;
+  padding-right: 40px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Textarea specific styling */
+#contactForm .form-textarea {
+  height: auto !important;
+  line-height: 1.5 !important;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+  resize: vertical !important;
+  min-height: 120px !important;
+}
+
+/* Input focus states */
+#contactForm .form-input:focus,
+#contactForm .form-select:focus,
+#contactForm .form-textarea:focus {
+  outline: none !important;
+  border-color: #FDB913 !important;
+  box-shadow: 0 0 0 2px rgba(253, 185, 19, 0.1) !important;
+}
+
+/* Placeholder styling for new form classes */
+#contactForm .form-input::placeholder,
+#contactForm .form-textarea::placeholder {
+  font-weight: 400 !important;
+  color: #666666 !important;
+  opacity: 1 !important;
+}
+
+/* Language dropdown styling */
+.language-dropdown {
+  margin-left: 20px;
+}
+
+.language-selector {
+  position: relative;
+}
+
+.language-select {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 8px 25px 8px 12px;
+  font-family: "Exo 2", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  border-radius: 0;
+  min-width: 60px;
+}
+
+.language-select:focus {
+  outline: none;
+  border-color: #fcb900;
+}
+
+.language-select:hover {
+  color: #fcb900;
+  border-color: #fcb900;
+}
+
+/* Custom dropdown arrow */
+.language-selector::after {
+  content: '▼';
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 10px;
+  pointer-events: none;
+}
+
+.language-select:hover + .language-selector::after,
+.language-selector:hover::after {
+  color: #fcb900;
+}
+
+/* Style dropdown options */
+.language-select option {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.language-select option:hover {
+  background-color: #333;
+  color: #fcb900;
+}
+
+/* Mobile menu container */
+.mobile-menu-container {
+  display: none;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Mobile language dropdown */
+.mobile-language {
+  margin-left: 0;
+}
+
+/* Hide navigation on mobile */
+@media (max-width: 767px) {
+  .wp-block-navigation {
+    display: none !important;
+  }
+
+  /* Hide desktop language dropdown on mobile */
+  .language-dropdown:not(.mobile-language) {
+    display: none;
+  }
+
+  /* Show mobile menu container */
+  .mobile-menu-container {
+    display: flex;
+  }
+
+  /* Hamburger menu styles */
+  .hamburger-menu {
+    display: block;
+    position: relative;
+    z-index: 1001;
+  }
+
+  .hamburger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    pointer-events: auto;
+  }
+
+  .hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 2px 0;
+    transition: all 0.3s ease;
+    transform-origin: center;
+    position: relative;
+  }
+
+  .hamburger-btn.active .hamburger-line:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    margin: 0;
+  }
+
+  .hamburger-btn.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+    margin: 0;
+  }
+
+  .hamburger-btn.active .hamburger-line:nth-child(3) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    margin: 0;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .mobile-menu.active {
+    transform: translateX(0);
+  }
+
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .mobile-menu li {
+    margin: 20px 0;
+  }
+
+  .mobile-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  @media (max-width: 500px) {
+    .mobile-menu a {
+      font-size: 19px;
+    }
+  }
+
+  .mobile-menu a:hover,
+  .mobile-menu a:focus {
+    color: #fcb900;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Hide hamburger menu and mobile language on desktop */
+@media (min-width: 768px) {
+  .mobile-menu-container {
+    display: none !important;
+  }
+  
+  .hamburger-menu {
+    display: none !important;
+  }
+  
+  .mobile-menu {
+    display: none !important;
+  }
+  
+  .mobile-language {
+    display: none !important;
+  }
+}
+
+/* Remove border/outline from logo on click/focus */
+.custom-logo-link:focus,
+.custom-logo-link:active,
+.custom-logo-link:focus-visible {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Responsive fix for #wlcmBcg height on small screens */
+@media (max-width: 560px) {
+  #wlcmBcg {
+    height: auto !important;
+    min-height: none !important;
+    padding-top: 60px;
+  }
+}
+
+/* Font size adjustments for #wlcmBcg hero section on screens below 500px */
+@media (max-width: 500px) {
+  /* Hero section - keep original sizes */
+  #wlcmBcg {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-top: 0 !important;
+    min-height: 500px !important;
+    height: 500px !important;
+  }
+  
+  #wlcmBcg > .wp-block-cover {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  #wlcmBcg h2 {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+  }
+  
+  /* Increase font size for Skynex Global text on small screens */
+  #wlcmBcg h2.wp-block-heading strong {
+    font-size: 32px !important;
+  }
+  
+  #wlcmBcg .has-regular-font-size {
+    font-size: 15px !important;
+  }
+  
+  #wlcmBcg .hero-subtitle {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+  }
+  
+  #wlcmBcg .secondParagraph,
+  #wlcmBcg .hero-additional-text {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+  }
+  
+  #wlcmBcg .wp-block-button__link {
+    font-size: 13px !important;
+    padding: 10px 18px !important;
+  }
+  
+  /* Increase font size for contact form button slightly */
+  .gutena-forms-submit-button .wp-block-button__link {
+    font-size: 14px !important;
+    padding: 13px 26px !important;
+    height: 40px !important;
+    width: 145px !important;
+  }
+  
+  /* Increase other non-hero text elements */
+  .purpose-label-en {
+    font-size: 19px !important;
+  }
+  
+  .purpose-main-text {
+    font-size: 15px !important;
+  }
+  
+  .purpose-secondary-text {
+    font-size: 16px !important;
+  }
+}
+
+#footerIcon ul {
+  list-style-type: none;
+}
+#footerIcon svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  background-color: #0050fc;
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+#footerIcon svg:hover {
+  transform: translateY(-6px);
+}
+
+/* Footer newsletter form - 100% width on mobile */
+@media (max-width: 767px) {
+  footer .wp-block-gutena-forms form,
+  footer .wp-block-gutena-forms,
+  footer .wp-block-gutena-field-group,
+  footer .gutena-forms-email-field,
+  footer .gutena-forms-email-field input {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  footer .wp-block-gutena-forms {
+    padding-right: 0 !important;
+  }
+  
+  footer .wp-block-column h2 {
+    text-align: center !important;
+    padding-right: 0 !important;
+  }
+}
+
+/* Safety fix for main container gap */
+main {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+main::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Nuclear option - ensure zero gap between main closing and footer opening */
+.wp-site-blocks > main:last-of-type {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.wp-site-blocks > main:last-of-type + footer {
+  margin-top: 0 !important;
+  margin-block-start: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Center Contact Form vertically - Deep Fix */
+footer#contactForm {
+  display: flex !important;
+  flex-direction: column;
+  min-height: 100vh !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  /* Ensure no fixed height prevents expansion */
+  height: auto !important; 
+}
+
+footer#contactForm .wp-block-cover__inner-container {
+  width: 100% !important;
+  height: auto !important;
+  /* Margin auto inside flex container centers vertically and horizontally */
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  flex-grow: 0 !important;
+}
+
+/* Fix visual centering by balancing form padding */
+footer#contactForm form {
+  padding-bottom: 2rem !important; /* Reduced from 5rem to match top padding better */
+}
+
+/* Subtle hover effect for hero section buttons */
+#wlcmBcg .wp-block-button__link {
+  transition: all 0.3s ease;
+}
+
+#wlcmBcg .wp-block-button__link:hover {
+  background-color: #e6a800 !important; /* Slightly darker yellow */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(252, 185, 0, 0.3);
+}
+
+/* ============================================
+   OUR PURPOSE SECTION - REDESIGNED
+   ============================================ */
+
+/* Section Container */
+#values-section {
+  background: var(--color-dark) !important;
+  background-image: url('/img/blackBcg.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.our-purpose-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Header Styling */
+.our-purpose-header {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.purpose-label-wrapper {
+  margin-bottom: 24px;
+}
+
+.purpose-label-en {
+  display: block;
+  font-size: clamp(22px, 2.8vw, 30px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #FDB913;
+  margin-bottom: 32px;
+  position: relative;
+  line-height: 1.2;
+}
+
+.purpose-label-en::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #FDB913;
+  border-radius: 2px;
+}
+
+/* Content Layout */
+.our-purpose-content {
+  display: block;
+  width: 100%;
+}
+
+.purpose-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 900px;
+}
+
+/* Main Text - Regular text */
+.purpose-main-text {
+  font-size: 17px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+/* Secondary Text - Larger, in focus */
+.purpose-secondary-text {
+  font-size: clamp(17px, 1.9vw, 20px);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+  font-weight: 500;
+  padding-left: 16px;
+  border-left: 3px solid #FDB913;
+  max-width: 700px;
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+  .our-purpose-container {
+    padding: 0 35px;
+  }
+  
+  #values-section {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+  }
+  
+  .our-purpose-header {
+    margin-bottom: 50px;
+  }
+  
+  .purpose-text-block {
+    gap: 28px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .our-purpose-container {
+    padding: 0 25px;
+  }
+  
+  #values-section {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+  
+  .our-purpose-header {
+    margin-bottom: 40px;
+  }
+  
+  .purpose-label-en {
+    font-size: clamp(20px, 3.5vw, 28px);
+    letter-spacing: -0.02em;
+  }
+
+  .purpose-text-block {
+    gap: 24px;
+  }
+
+  .purpose-main-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .purpose-secondary-text {
+    font-size: clamp(16px, 1.8vw, 18px);
+    padding-left: 16px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .our-purpose-container {
+    padding: 0 20px;
+  }
+  
+  #values-section {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+  
+  .our-purpose-header {
+    margin-bottom: 35px;
+  }
+  
+  .purpose-label-en {
+    font-size: 20px;
+    letter-spacing: -0.02em;
+  }
+
+  .purpose-text-block {
+    gap: 20px;
+  }
+
+  .purpose-main-text {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .purpose-secondary-text {
+    font-size: 16px;
+    line-height: 1.6;
+    padding-left: 14px;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  .our-purpose-container {
+    padding: 0 18px;
+  }
+
+  .purpose-label-en {
+    font-size: 18px;
+  }
+
+  .purpose-main-text {
+    font-size: 14px;
+  }
+
+  .purpose-secondary-text {
+    font-size: 14px;
+  }
+}
+
+/* Fix text wrapping in contact form subtitle */
+.wp-container-core-group-is-layout-23441af8 {
+  flex-wrap: wrap !important;
+  white-space: normal !important;
+}
+
+/* Force text wrapping for the subtitle paragraph */
+#contactForm .sub-title p {
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+  max-width: none !important;
+  width: auto !important;
+  height: auto !important;
+  line-height: 1.4 !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+/* Override constrained layout for subtitle */
+#contactForm .sub-title.is-layout-constrained {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* Override is-nowrap class that prevents wrapping */
+#contactForm .is-nowrap {
+  white-space: normal !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+/* Allow subtitle block to shrink and wrap inside flex container */
+#contactForm .sub-title {
+  flex: 1 1 100% !important;
+  min-width: 0 !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+/* Mobile contact form overrides placed at EOF to win cascade */
+@media (max-width: 500px) {
+  /* Slightly increase labels on mobile */
+  #contactForm label,
+  #contactForm .form-label,
+  #contactForm .heading-input-label-gutena,
+  #contactForm label.heading-input-label-gutena,
+  #contactForm .wp-block-heading.heading-input-label-gutena,
+  footer#contactForm label {
+    font-size: 0.9rem !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Slightly increase input font sizes */
+  #contactForm .form-input,
+  #contactForm input,
+  #contactForm input[type="text"],
+  #contactForm input[type="email"],
+  #contactForm input[type="tel"],
+  #contactForm .form-select,
+  #contactForm select,
+  #contactForm .gutena-forms-field,
+  #contactForm .gutena-forms-text-field input,
+  #contactForm .gutena-forms-email-field input,
+  #contactForm .gutena-forms-select-field select,
+  #contactForm .field-group-type-email input,
+  #contactForm .field-group-type-email .gutena-forms-field,
+  #contactForm .gutena-forms-email-field .gutena-forms-field {
+    font-size: 0.85rem !important;
+    height: 44px !important;
+    line-height: 44px !important;
+    padding: 0 12px !important;
+  }
+
+  /* Textarea sizing on mobile - slightly larger */
+  #contactForm .form-textarea,
+  #contactForm textarea,
+  #contactForm .gutena-forms-textarea-field textarea {
+    font-size: 0.85rem !important;
+    padding: 10px 12px !important;
+    min-height: 100px !important;
+    line-height: 1.45 !important;
+  }
+
+  /* Submit buttons - slightly larger */
+  #contactForm .gutena-forms-submit-button .wp-block-button__link,
+  #contactForm .contact-submit-btn,
+  #contactForm button[type="submit"],
+  #contactForm .wp-block-button__link {
+    font-size: 0.8rem !important;
+    padding: 11px 22px !important;
+    height: 40px !important;
+    min-height: 40px !important;
+  }
+}
