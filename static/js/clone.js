@@ -21,7 +21,7 @@ const headerHTML = `
                   ><img
                     width="100"
                     height="100"
-                    src="/img/Logo-beli-edited.png"
+                    src="/img/logo-beli-edited.png"
                     class="custom-logo"
                     alt="nikolavujicic"
                     decoding="async"
@@ -213,7 +213,7 @@ const footerHTML = `
             <!-- KOLONA 1 - IDENTITET (LEVO) -->
             <div class="footer-brand">
               <a href="#wlcmBcg" class="footer-logo-link">
-                <img src="/img/Logo-beli-edited.png" alt="Skynex Logo" class="footer-logo">
+                <img src="/img/logo-beli-edited.png" alt="Skynex Logo" class="footer-logo">
               </a>
               
               <!-- Newsletter Section -->
