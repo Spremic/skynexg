@@ -426,14 +426,14 @@ const translations = {
       ],
       cards: [
         {
-          title: "IRIS Education",
-          subtitle: "Developing next-generation educational models.",
+          title: "IRIS Educational Model",
+          subtitle: "A system that develops mindset, independence, and functional skills for real life.",
           desc: [
-            "IRIS Education is a next-generation educational system focused on applicable knowledge, critical thinking, creativity, and future skills.",
-            "IRIS is designed to evolve from an educational model into applied learning environments.",
+            "IRIS is a developmental and educational model based on practical challenges, teamwork, decision-making, and learning through real situations.",
+            "Instead of passive information absorption, children develop adaptive thinking, responsibility, collaboration, and problem-solving skills through experience.",
             "Education is not preparation for tests.<br>Education is preparation for life.",
           ],
-          cta: "Visit IRIS Education →",
+          cta: "Learn more",
         },
         {
           title: "Buzzy Global Media",
@@ -587,10 +587,10 @@ const translations = {
       title: "Ecosystem in Action",
       cards: [
         {
-          title: "IRIS Education",
-          desc: "IRIS Education is a next-generation educational system focused on applicable knowledge, critical thinking, creativity, and future skills. Education is not preparation for tests. Education is preparation for life.",
-          subtitle: "Developing human potential for the world to come",
-          cta: "Visit IRIS Education →",
+          title: "IRIS Educational Model",
+          desc: "IRIS is a developmental and educational model based on practical challenges, teamwork, decision-making, and learning through real situations. Education is not preparation for tests. Education is preparation for life.",
+          subtitle: "A system that develops mindset, independence, and functional skills for real life.",
+          cta: "Learn more",
         },
         {
           title: "Skynex Technologies",
@@ -679,14 +679,14 @@ const translations = {
       ],
       cards: [
         {
-          title: "IRIS Education",
-          subtitle: "Razvoj obrazovnih modela nove generacije.",
+          title: "IRIS Obrazovni Model",
+          subtitle: "Sistem koji razvija način razmišljanja, samostalnost i funkcionalne veštine za stvaran život.",
           desc: [
-            "IRIS Education je obrazovni sistem nove generacije fokusiran na primenljivo znanje, kritičko razmišljanje, kreativnost i buduće veštine.",
-            "IRIS je dizajniran da evoluira iz obrazovnog modela u primenjena okruženja za učenje.",
+            "IRIS je razvojni i edukativni model zasnovan na praktičnim izazovima, timskom radu, donošenju odluka i učenju kroz realne situacije.",
+            "Umesto pasivnog usvajanja informacija, deca razvijaju adaptivno razmišljanje, odgovornost, saradnju i sposobnost rešavanja problema kroz iskustvo.",
             "Obrazovanje nije priprema za testove.<br>Obrazovanje je priprema za život.",
           ],
-          cta: "Poseti IRIS Education →",
+          cta: "Saznaj više",
         },
         {
           title: "Buzzy Global Media",
@@ -805,10 +805,10 @@ const translations = {
       title: "Ekosistem na delu",
       cards: [
         {
-          title: "IRIS Education",
-          desc: "IRIS Education je obrazovni sistem nove generacije fokusiran na primenljivo znanje, kritičko razmišljanje, kreativnost i buduće veštine. Obrazovanje nije priprema za testove. Obrazovanje je priprema za život.",
-          subtitle: "Razvoj ljudskog potencijala za svet koji dolazi",
-          cta: "Poseti IRIS Education →",
+          title: "IRIS Obrazovni Model",
+          desc: "IRIS je razvojni i edukativni model zasnovan na praktičnim izazovima, timskom radu, donošenju odluka i učenju kroz realne situacije. Obrazovanje nije priprema za testove. Obrazovanje je priprema za život.",
+          subtitle: "Sistem koji razvija način razmišljanja, samostalnost i funkcionalne veštine za stvaran život.",
+          cta: "Saznaj više",
         },
         {
           title: "Skynex Technologies",
@@ -2463,5 +2463,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
-
-
