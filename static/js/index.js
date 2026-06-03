@@ -426,14 +426,14 @@ const translations = {
       ],
       cards: [
         {
-          title: "IRIS Educational Model",
+          title: "IRIS Learning Model",
           subtitle: "A system that develops mindset, independence, and functional skills for real life.",
           desc: [
             "IRIS is a developmental and educational model based on practical challenges, teamwork, decision-making, and learning through real situations.",
             "Instead of passive information absorption, children develop adaptive thinking, responsibility, collaboration, and problem-solving skills through experience.",
             "Education is not preparation for tests.<br>Education is preparation for life.",
           ],
-          cta: "Learn more",
+          cta: "DISCOVER IRIS",
         },
         {
           title: "Buzzy Global Media",
@@ -587,10 +587,10 @@ const translations = {
       title: "Ecosystem in Action",
       cards: [
         {
-          title: "IRIS Educational Model",
+          title: "IRIS Learning Model",
           desc: "IRIS is a developmental and educational model based on practical challenges, teamwork, decision-making, and learning through real situations. Education is not preparation for tests. Education is preparation for life.",
           subtitle: "A system that develops mindset, independence, and functional skills for real life.",
-          cta: "Learn more",
+          cta: "DISCOVER IRIS",
         },
         {
           title: "Skynex Technologies",
@@ -686,7 +686,7 @@ const translations = {
             "Umesto pasivnog usvajanja informacija, deca razvijaju adaptivno razmišljanje, odgovornost, saradnju i sposobnost rešavanja problema kroz iskustvo.",
             "Obrazovanje nije priprema za testove.<br>Obrazovanje je priprema za život.",
           ],
-          cta: "Saznaj više",
+          cta: "UPOZNAJ IRIS",
         },
         {
           title: "Buzzy Global Media",
@@ -808,7 +808,7 @@ const translations = {
           title: "IRIS Obrazovni Model",
           desc: "IRIS je razvojni i edukativni model zasnovan na praktičnim izazovima, timskom radu, donošenju odluka i učenju kroz realne situacije. Obrazovanje nije priprema za testove. Obrazovanje je priprema za život.",
           subtitle: "Sistem koji razvija način razmišljanja, samostalnost i funkcionalne veštine za stvaran život.",
-          cta: "Saznaj više",
+          cta: "UPOZNAJ IRIS",
         },
         {
           title: "Skynex Technologies",
