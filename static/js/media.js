@@ -16,6 +16,16 @@ document.addEventListener('DOMContentLoaded', function() {
             'media-title': 'Media Inquiries',
             'media-subtitle': 'Media & Press Inquiries',
             
+            // Official Initiative
+            'media-initiative-title': 'Official Initiative | October 2026',
+            'media-initiative-headline': '15 GIRLS. ONE WORLD CHAMPIONSHIP.',
+            'media-initiative-subheading': 'They earned their place. Let\'s help them reach the world stage.',
+            'media-initiative-p1': 'Skynex Global has launched an initiative to raise donations and partner support for 15 young dancers from Belgrade, Novi Sad, and Vršac to attend the IDO World Show Dance Championships and IDO World Performing Arts Improvisation Championships 2026, held from December 5 to 9 in Poland.',
+            'media-initiative-p2': 'The initiative brings together companies, organizations, and individuals wishing to contribute to funding travel, accommodation, competition fees, equipment, and other needs of the delegation comprising 15 competitors and five coaches.',
+            'media-initiative-goal': '<strong>Initial initiative goal: 35,000 EUR</strong>, through financial donations and direct partner support.',
+            'media-initiative-invite': 'We invite all interested parties to get involved and support the young talents of Serbia.',
+            'media-initiative-cta': 'Read the official call and find out how you can donate.',
+            
             // Introduction
             'media-intro-title': 'Media & Press Inquiries',
             'media-intro-text': 'Skynex Global communicates with media in the context of education, social development, media responsibility, and technological systems.',
@@ -69,6 +79,16 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Media page content
             'media-title': 'Medijski upiti',
+
+            // Zvanična Inicijativa
+            'media-initiative-title': 'ZVANIČNA INICIJATIVA | Oktobar 2026.',
+            'media-initiative-headline': '15 DEVOJČICA. JEDNO SVETSKO PRVENSTVO.',
+            'media-initiative-subheading': 'Plasman su izborile. Pomozimo im da stignu do svetske scene.',
+            'media-initiative-p1': 'Skynex Global pokrenuo je inicijativu prikupljanja donacija i partnerske podrške za odlazak 15 mladih plesačica iz Beograda, Novog Sada i Vršca na IDO World Show Dance Championships i IDO World Performing Arts Improvisation Championships 2026, koji se održavaju od 5. do 9. decembra u Poljskoj.',
+            'media-initiative-p2': 'Inicijativa okuplja kompanije, organizacije i pojedince koji žele da doprinesu finansiranju putovanja, smeštaja, takmičarskih troškova, opreme i drugih potreba delegacije koju čini 15 takmičarki i pet trenera.',
+            'media-initiative-goal': '<strong>Početni cilj inicijative: 35.000 EUR</strong>, kroz finansijske donacije i direktnu podršku partnera.',
+            'media-initiative-invite': 'Pozivamo sve zainteresovane da se uključe i podrže mlade talente Srbije.',
+            'media-initiative-cta': 'Pročitajte zvanični poziv i saznajte kako možete da donirate.',
 
             // Introduction
             'media-intro-title': 'Medijski upiti',
@@ -147,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (element.tagName === 'INPUT' && element.type === 'email') {
                     element.placeholder = translations[currentLanguage][key];
                 } else {
-                    element.textContent = translations[currentLanguage][key];
+                    element.innerHTML = translations[currentLanguage][key];
                 }
             }
         });
