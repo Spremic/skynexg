@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
             'media-initiative-p2': 'The initiative brings together companies, organizations, and individuals wishing to contribute to funding travel, accommodation, competition fees, equipment, and other needs of the delegation comprising 15 competitors and five coaches.',
             'media-initiative-goal': '<strong>Initial initiative goal: 35,000 EUR</strong>, through financial donations and direct partner support.',
             'media-initiative-invite': 'We invite all interested parties to get involved and support the young talents of Serbia.',
-            'media-initiative-cta': 'Read the official call and find out how you can donate.',
             
             // Introduction
             'media-intro-title': 'Media & Press Inquiries',
@@ -118,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function() {
             'media-initiative-p2': 'Inicijativa okuplja kompanije, organizacije i pojedince koji žele da doprinesu finansiranju putovanja, smeštaja, takmičarskih troškova, opreme i drugih potreba delegacije koju čini 15 takmičarki i pet trenera.',
             'media-initiative-goal': '<strong>Početni cilj inicijative: 35.000 EUR</strong>, kroz finansijske donacije i direktnu podršku partnera.',
             'media-initiative-invite': 'Pozivamo sve zainteresovane da se uključe i podrže mlade talente Srbije.',
-            'media-initiative-cta': 'Pročitajte zvanični poziv i saznajte kako možete da donirate.',
 
             // Introduction
             'media-intro-title': 'Medijski upiti',

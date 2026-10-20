@@ -469,13 +469,6 @@ html {
   margin-top: 2px;
 }
 
-.initiative-cta {
-  font-weight: 700 !important;
-  color: #000 !important;
-  font-size: 1.05rem !important;
-  margin-top: 1.5rem !important;
-}
-
 /* Image Card Styling */
 .initiative-media-card {
   position: relative;
