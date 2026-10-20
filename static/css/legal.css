@@ -370,7 +370,7 @@ html {
 }
 
 .media-expandable-content.show {
-  max-height: 1500px;
+  max-height: 6000px;
   opacity: 1;
 }
 
@@ -467,6 +467,262 @@ html {
 .initiative-goal-icon {
   flex-shrink: 0;
   margin-top: 2px;
+}
+
+/* Rich Initiative Content Sections */
+.initiative-section-title {
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  color: #111 !important;
+  margin-top: 2rem !important;
+  margin-bottom: 0.85rem !important;
+  letter-spacing: 0.3px;
+  position: relative;
+  padding-left: 12px;
+  border-left: 3px solid #fcb900;
+}
+
+.initiative-bullet-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.25rem;
+}
+
+.initiative-bullet-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 0.5rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.initiative-bullet-list li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  background-color: #fcb900;
+  border-radius: 50%;
+}
+
+.initiative-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 14px 18px;
+  border-radius: 8px;
+}
+
+.initiative-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.initiative-meta-item .meta-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #6b7280;
+  letter-spacing: 0.5px;
+}
+
+.initiative-meta-item .meta-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.initiative-highlight-box {
+  background: linear-gradient(135deg, #fffdf5 0%, #fff9e6 100%);
+  border-left: 4px solid #fcb900;
+  padding: 14px 18px;
+  border-radius: 0 8px 8px 0;
+}
+
+.initiative-highlight-box p {
+  margin: 0 !important;
+  color: #1f2937 !important;
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+.initiative-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 18px;
+  height: 100%;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.initiative-card:hover {
+  border-color: #fcb900;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transform: translateY(-2px);
+}
+
+.initiative-card-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: #fcb900;
+  color: #000;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.initiative-card h5 {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.initiative-card p {
+  font-size: 0.92rem !important;
+  line-height: 1.6 !important;
+  color: #4b5563 !important;
+  margin: 0 !important;
+}
+
+.initiative-quote-callout {
+  border: 1.5px dashed #fcb900;
+  background: #fffdf5;
+  border-radius: 8px;
+  padding: 14px 20px;
+  text-align: center;
+}
+
+.initiative-quote-callout p {
+  margin: 0 !important;
+  color: #111 !important;
+  font-size: 1.02rem;
+  line-height: 1.5;
+}
+
+/* Bank and Organization Cards */
+.initiative-bank-card, .initiative-org-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.bank-card-badge {
+  display: inline-block;
+  background: #111;
+  color: #fcb900;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+}
+
+.bank-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+  padding: 7px 0;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 0.93rem;
+}
+
+.bank-row:last-child {
+  border-bottom: none;
+}
+
+.bank-row-accent {
+  background: #fffdf2;
+  margin: 6px -10px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border-bottom: none;
+}
+
+.bank-label {
+  font-weight: 600;
+  color: #6b7280;
+  min-width: 120px;
+}
+
+.bank-val {
+  font-weight: 600;
+  color: #1f2937;
+  flex: 1;
+}
+
+.bank-val a {
+  color: #1f2937;
+  text-decoration: underline;
+  text-decoration-color: #fcb900;
+  transition: color 0.2s ease;
+}
+
+.bank-val a:hover {
+  color: #fcb900;
+}
+
+.bank-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 0.5px;
+}
+
+/* Contact Card */
+.initiative-contact-card {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  border-left: 4px solid #fcb900;
+}
+
+.initiative-contact-card h5 {
+  color: #fcb900;
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+}
+
+.initiative-contact-info p {
+  color: #e5e7eb !important;
+  font-size: 0.95rem !important;
+  margin-bottom: 0.4rem !important;
+}
+
+.initiative-contact-info a {
+  color: #fcb900;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.initiative-contact-info a:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+.initiative-tagline {
+  color: #fff !important;
+  font-size: 1.05rem !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 14px;
 }
 
 /* Image Card Styling */
