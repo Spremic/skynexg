@@ -16,8 +16,23 @@ document.addEventListener('DOMContentLoaded', function() {
             'media-title': 'Media Inquiries',
             'media-subtitle': 'Media & Press Inquiries',
             
+            // Buttons
+            'media-btn-read-more': 'Read more',
+            'media-btn-show-less': 'Show less',
+
+            // IT Logs Post
+            'media-itlogs-category': 'IN THE MEDIA',
+            'media-itlogs-date': 'September 9, 2026',
+            'media-itlogs-title': 'Skynex Global in IT Logs: Education for an Unpredictable Future',
+            'media-itlogs-p1': 'International technology media outlet IT Logs featured Skynex Global in an interview with founder Nikola Vujičić.',
+            'media-itlogs-p2': 'In the article by journalist Bojan Stojkovski, the vision of connecting education, media, and technology was presented, alongside the IRIS Learning Model — an interdisciplinary program aimed at developing abilities children can apply across diverse life situations.',
+            'media-itlogs-p3': 'Special focus was placed on critical thinking, adaptability, decision-making, and preparing youth for a world whose future developments cannot be predicted in advance.',
+            'media-itlogs-link-label': 'Read the original article on IT Logs (EN):',
+            'media-itlogs-link': 'Open article on IT Logs (EN)',
+
             // Official Initiative
-            'media-initiative-title': 'Official Initiative | October 2026',
+            'media-initiative-title': 'OFFICIAL INITIATIVE',
+            'media-initiative-date': 'October 2026',
             'media-initiative-headline': '15 GIRLS. ONE WORLD CHAMPIONSHIP.',
             'media-initiative-subheading': 'They earned their place. Let\'s help them reach the world stage.',
             'media-initiative-p1': 'Skynex Global has launched an initiative to raise donations and partner support for 15 young dancers from Belgrade, Novi Sad, and Vršac to attend the IDO World Show Dance Championships and IDO World Performing Arts Improvisation Championships 2026, held from December 5 to 9 in Poland.',
@@ -48,9 +63,9 @@ document.addEventListener('DOMContentLoaded', function() {
             'media-contact-email-label': 'E-mail:',
             'media-contact-email-alt': '(or info@skynexg.com until a dedicated email is set up)',
             
-            // Press Materials
-            'media-materials-title': 'Press Materials',
-            'media-materials-text': 'Press materials and official statements will be available on this page in accordance with ecosystem development.',
+            // Media Releases & Announcements (formerly Press Materials)
+            'media-materials-title': 'Media Releases & Announcements',
+            'media-materials-text': 'Follow announcements about Skynex Global\'s work, interviews in domestic and international media, official statements, and initiatives we implement.',
             
             // Footer
             'footer-created-text': 'Created in Serbia.<br>Designed for the world.',
@@ -80,8 +95,23 @@ document.addEventListener('DOMContentLoaded', function() {
             // Media page content
             'media-title': 'Medijski upiti',
 
+            // Buttons
+            'media-btn-read-more': 'Pogledaj više',
+            'media-btn-show-less': 'Pogledaj manje',
+
+            // IT Logs Post
+            'media-itlogs-category': 'U MEDIJIMA',
+            'media-itlogs-date': '9. septembar 2026.',
+            'media-itlogs-title': 'Skynex Global u IT Logs: Obrazovanje za budućnost koju ne možemo predvideti',
+            'media-itlogs-p1': 'Međunarodni tehnološki medij IT Logs predstavio je Skynex Global kroz razgovor sa osnivačem Nikolom Vujičićem.',
+            'media-itlogs-p2': 'U tekstu novinara Bojana Stojkovskog predstavljeni su vizija povezivanja obrazovanja, medija i tehnologije, kao i IRIS Learning Model – interdisciplinarni program usmeren na razvoj sposobnosti koje deca mogu primenjivati u različitim životnim situacijama.',
+            'media-itlogs-p3': 'Poseban fokus stavljen je na kritičko mišljenje, prilagodljivost, donošenje odluka i pripremu mladih za svet čiji razvoj nije moguće unapred precizno predvideti.',
+            'media-itlogs-link-label': 'Pročitajte originalni članak na IT Logs (EN):',
+            'media-itlogs-link': 'Otvori članak na IT Logs (EN)',
+
             // Zvanična Inicijativa
-            'media-initiative-title': 'ZVANIČNA INICIJATIVA | Oktobar 2026.',
+            'media-initiative-title': 'ZVANIČNA INICIJATIVA',
+            'media-initiative-date': 'Oktobar 2026.',
             'media-initiative-headline': '15 DEVOJČICA. JEDNO SVETSKO PRVENSTVO.',
             'media-initiative-subheading': 'Plasman su izborile. Pomozimo im da stignu do svetske scene.',
             'media-initiative-p1': 'Skynex Global pokrenuo je inicijativu prikupljanja donacija i partnerske podrške za odlazak 15 mladih plesačica iz Beograda, Novog Sada i Vršca na IDO World Show Dance Championships i IDO World Performing Arts Improvisation Championships 2026, koji se održavaju od 5. do 9. decembra u Poljskoj.',
@@ -112,9 +142,9 @@ document.addEventListener('DOMContentLoaded', function() {
             'media-contact-email-label': 'E-mail:',
             'media-contact-email-alt': '(или info@skynexg.com док се не успостави посебна адреса)',
 
-            // Press Materials
-            'media-materials-title': 'Materijali za štampu',
-            'media-materials-text': 'Materijali za štampu i zvanična saopštenja biće dostupni na ovoj stranici u skladu sa razvojem ekosistema.',
+            // Medijske objave i saopštenja (ranije Materijali za štampu)
+            'media-materials-title': 'MEDIJSKE OBJAVE I SAOPŠTENJA',
+            'media-materials-text': 'Pratite objave o radu Skynex Globala, intervjue u domaćim i međunarodnim medijima, zvanična saopštenja i inicijative koje realizujemo.',
             
             // Footer
             'footer-created-text': 'Kreirano u Srbiji.<br>Dizajnirano za svet.',
@@ -225,6 +255,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Update HTML lang attribute
         document.documentElement.lang = currentLanguage === 'sr' ? 'sr-RS' : 'en-US';
+
+        // Update read more buttons based on expansion state
+        document.querySelectorAll('.media-read-more-btn').forEach(btn => {
+            const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+            const textSpan = btn.querySelector('.btn-text');
+            if (textSpan) {
+                if (isExpanded) {
+                    textSpan.textContent = currentLanguage === 'sr' ? 'Pogledaj manje' : 'Show less';
+                } else {
+                    textSpan.textContent = currentLanguage === 'sr' ? 'Pogledaj više' : 'Read more';
+                }
+            }
+        });
     }
 
     // Update language selector dropdowns
@@ -361,12 +404,47 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Expandable content functionality (Read more / Pogledaj više)
+    function initExpandableContent() {
+        document.addEventListener('click', function(e) {
+            const btn = e.target.closest('.media-read-more-btn');
+            if (!btn) return;
+
+            const targetId = btn.getAttribute('data-target');
+            const target = document.getElementById(targetId);
+            if (!target) return;
+
+            const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+            const newExpanded = !isExpanded;
+            btn.setAttribute('aria-expanded', newExpanded);
+
+            if (newExpanded) {
+                target.classList.add('show');
+                const textSpan = btn.querySelector('.btn-text');
+                if (textSpan) {
+                    textSpan.textContent = currentLanguage === 'sr' ? 'Pogledaj manje' : 'Show less';
+                }
+                const icon = btn.querySelector('.btn-icon');
+                if (icon) icon.style.transform = 'rotate(180deg)';
+            } else {
+                target.classList.remove('show');
+                const textSpan = btn.querySelector('.btn-text');
+                if (textSpan) {
+                    textSpan.textContent = currentLanguage === 'sr' ? 'Pogledaj više' : 'Read more';
+                }
+                const icon = btn.querySelector('.btn-icon');
+                if (icon) icon.style.transform = 'rotate(0deg)';
+            }
+        });
+    }
+
     // Initialize all functionality
     function init() {
         initLanguageSelectors();
         initMobileMenu();
         initNewsletterForm();
         initSmoothScrolling();
+        initExpandableContent();
         updateLanguageSelectors();
         updateContent();
         
